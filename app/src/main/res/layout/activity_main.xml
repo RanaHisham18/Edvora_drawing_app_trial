@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageButton
+       android:id="@+id/Pen_Iv"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:src="@drawable/ic_baseline_create_24"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginTop="16dp"
+       android:layout_marginStart="52dp"/>
+   <ImageButton
+       android:id="@+id/Arrow_Iv"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:src="@drawable/ic_baseline_arrow_upward_24"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@id/Pen_Iv"
+       android:layout_marginTop="16dp"
+       android:layout_marginStart="8dp"/>
+
+   <ImageButton
+       android:id="@+id/Square_Iv"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:src="@drawable/ic_baseline_crop_square_24"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@id/Arrow_Iv"
+       android:layout_marginTop="16dp"
+       android:layout_marginStart="8dp"/>
+   <ImageButton
+       android:id="@+id/Circle_Iv"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:src="@drawable/ic_baseline_remove_circle_24"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@id/Square_Iv"
+       android:layout_marginTop="16dp"
+       android:layout_marginStart="8dp"/>
+   <ImageButton
+       android:id="@+id/Color_Iv"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:src="@drawable/ic_baseline_color_pallete_24"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@id/Circle_Iv"
+       android:layout_marginTop="16dp"
+       android:layout_marginStart="8dp"/>
+
+
+
+<ImageButton
+    android:id="@+id/Black"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginEnd="16dp"
+    android:backgroundTint="@color/black"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/Color_Iv"/>
+
+   <ImageButton
+       android:id="@+id/cyan"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:backgroundTint="@color/cyan"
+       app:layout_constraintEnd_toStartOf="@id/Black"
+       app:layout_constraintTop_toBottomOf="@id/Color_Iv"/>
+   <ImageButton
+       android:id="@+id/green"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:backgroundTint="@color/green"
+       app:layout_constraintEnd_toStartOf="@id/cyan"
+       app:layout_constraintTop_toBottomOf="@id/Color_Iv"/>
+   <ImageButton
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:backgroundTint="@color/red"
+       app:layout_constraintEnd_toStartOf="@id/green"
+       app:layout_constraintTop_toBottomOf="@id/Color_Iv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
